@@ -16,11 +16,12 @@ export const Experience = () => {
       title: "HTML",
       style: "shadow-orange-500",
     },
+
     {
       id: 2,
-      src: ReactImage,
-      title: "React",
-      style: "shadow-blue-600",
+      src: CSS,
+      title: "CSS",
+      style: "shadow-blue-500",
     },
     {
       id: 3,
@@ -30,9 +31,9 @@ export const Experience = () => {
     },
     {
       id: 4,
-      src: CSS,
-      title: "CSS",
-      style: "shadow-blue-500",
+      src: ReactImage,
+      title: "React",
+      style: "shadow-blue-600",
     },
     {
       id: 5,

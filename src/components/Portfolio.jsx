@@ -1,10 +1,10 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import instalNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import arrayDestruct from "../assets/portfolio/react-made.png";
+import instalNode from "../assets/portfolio/building_app.jpg";
+import navbar from "../assets/portfolio/weather.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import reactWeather from "../assets/portfolio/landingpage.png";
 const Portfolio = () => {
   const projects = [
     {

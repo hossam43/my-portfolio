@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div name="home">
       <div className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
-        <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full text-red-500 px-4 md:flex-row">
+        <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full text-white px-4 md:flex-row">
           {/* text intro */}
           <div className="flex flex-col justify-center items-start h-full">
             <h2 className="text-4xl sm:text-7xl font-bold">
