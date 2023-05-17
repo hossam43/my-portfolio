@@ -11,7 +11,7 @@ export const Home = () => {
           {/* text intro */}
           <div className="flex flex-col justify-center items-start h-full">
             <h2 className="text-4xl sm:text-7xl font-bold">
-              I'm A Full Staic developer
+              I'm A Frontend developer
             </h2>
             <p className="text-gray-300 py-4 max-w-md">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
