@@ -24,7 +24,7 @@ export const About = () => {
           laborum deserunt, reprehenderit magnam!
         </p>
         <br />
-        <p className="text-xl">
+        <p className="text-xl pb-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit
           quidem voluptatum magnam repellat? Ullam, aut earum. Hic aliquam
           cupiditate odit voluptas minima, est fugiat aspernatur adipisci

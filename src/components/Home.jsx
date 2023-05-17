@@ -31,7 +31,7 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="imgConatainer">
+          <div className="imgConatainer py-12">
             <img
               src={HeroImage}
               alt="my porfile"

@@ -39,7 +39,7 @@ const Portfolio = () => {
       className="bg-gradient-to-b from-black to-gray-800 text-white w-full md:h-screen "
     >
       {/* it takes the whole view port */}
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
           <p
             className="text-4xl font-bold inline border-b-4
@@ -50,7 +50,7 @@ const Portfolio = () => {
           <p className="py-6">Check out my work right here</p>
         </div>
         {/* we are leaving px-12 in general becuse it will be applyed only when it is on small screen becuse we define it when it is sm and the sm takes from 640 to the greater width */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mb-12">
           {projects.map(({ id, src }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
