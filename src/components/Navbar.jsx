@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const [hambIcon, setHambIcon] = useState(false);
@@ -13,7 +14,14 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black sticky top-0">
+    <motion.div
+      initial={{ opacity: 0.5 }}
+      animate={{
+        opacity: 1,
+        duration: 40,
+      }}
+      className="flex justify-between items-center w-full h-20 px-4 text-white bg-black sticky top-0 z-30"
+    >
       <div>
         <h1 className="text-5xl font-signature">Hossam</h1>
       </div>
@@ -23,7 +31,7 @@ export const Navbar = () => {
           return (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-100 hover:text-cyan-500"
+              className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-100 hover:text-teal-500"
             >
               <Link to={link} smooth duration={500}>
                 {" "}
@@ -48,7 +56,7 @@ export const Navbar = () => {
             return (
               <li
                 key={id}
-                className="py-4 px-4 text-4xl cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-100 hover:text-cyan-500"
+                className="py-4 px-4 text-4xl cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-100 hover:text-teal-500"
               >
                 <Link
                   onClick={() => {
@@ -66,6 +74,6 @@ export const Navbar = () => {
           })}
         </ul>
       )}
-    </div>
+    </motion.div>
   );
 };

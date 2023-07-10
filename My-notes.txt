@@ -220,3 +220,28 @@ The h-full class, on the other hand, is a utility class used to set the height o
 By combining the h-screen class on the parent <div> and the h-full class on the child <div>, you can create a nested structure where the child <div> takes up the full height of its parent, which is already set to the full height of the screen. This allows you to create layouts where certain sections or elements fill the entire vertical space of the screen while maintaining a nested structure within them.
 
 (IT WILL BE AWSOME IF THE CHILD CONTAINER HAS A FLEX DISPLAY)
+
+===========
+
+what is getform.io
+
+Getform.io is a service that allows you to easily create and manage forms for your websites. It provides a form backend infrastructure that handles form submissions and allows you to collect and store data submitted through your forms.
+
+With Getform.io, you can create custom forms using a simple drag-and-drop interface or by writing your own HTML forms. The service generates a form endpoint URL that you can use as the action attribute in your HTML form. When a user submits the form, the data is sent to Getform.io, which processes and stores it securely.
+
+===========
+
+so i have to add the top-0 rigth?
+ChatGPT
+Yes, adding the top-0 class ensures that the sticky navigation bar sticks to the top of the page. This class positions the element at the top of its containing parent or the top of the viewport, depending on its context.
+
+===========++++++++++=================
+
+
+canvasRef.width = window.innerWidth;: This line sets the width property of the canvas element referenced by canvasRef to the current inner width of the browser window. This ensures that the canvas element spans the entire width of the window.
+
+canvasRef.height = window.innerHeight;: Similarly, this line sets the height property of the canvas element to the current inner height of the browser window. It ensures that the canvas element covers the full height of the window.
+
+=======
+
+get user mouse postion

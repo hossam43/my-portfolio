@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, black, black, #1f2937);
+  /* border-radius: 100vw; */
+  margin-block: 0; /* Set margin-block to 0 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #22c55e;
+}
