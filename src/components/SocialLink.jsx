@@ -31,7 +31,7 @@ export const SocialLink = () => {
           Mail <HiOutlineMail size={30}></HiOutlineMail>
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:hossamayman2399.com",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export const SocialLink = () => {
           Resume <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
         </>
       ),
-      href: "../../public/Hossam Ayman - CV.pdf",
+      href: "/Hossam_Ayman_2023.pdf",
       style: "rounded-br-md",
       download: true,
     },

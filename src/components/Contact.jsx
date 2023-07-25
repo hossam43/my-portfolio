@@ -1,40 +1,28 @@
-import React from "react";
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-// import emailjs from "@emailjs/browser";
-// import { styles } from "../styles";
-
-// import { sectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
-import contactImg from "../assets/contact.png";
-
+import React, { Suspense, useState, useEffect } from "react";
+import { Envelop } from "./Envelop";
+import { Canvas } from "@react-three/fiber";
 export const Contact = () => {
-  const forRef = useRef();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [loading, setLoading] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768); // Adjust the threshold as needed
+    };
 
-  // return (
-  //   <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-  //     {/* to make the form slid from the left */}
-  //     <motion.div
-  //       variants={slideIn("left", "tween", 0.2, 1)}
-  //       className="flex-[0.75] bg-gray-900 text-red-600 p-8 rounded-2xl"
-  //     >
-  //       <p className="styles-sectionSubText">Get in touch</p>
-  //       <h3 className="styles-sectionHeadText">Contact.</h3>
-  //     </motion.div>
+    handleResize(); // Call the function initially
 
-  //     <motion.div
-  //       variants={slideIn("right", "tween", 0.2, 1)}
-  //       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-  //     >
+    window.addEventListener("resize", handleResize); // Add event listener for window resize
 
-  //     </motion.div>
-  //   </div>
-  // );
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleEnvelopClick = () => {
+    const myEmail = "mailto:hossamayman2399.com";
+    window.location.href = myEmail;
+  };
   return (
     <div
       name="contact"
@@ -45,7 +33,7 @@ export const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-8">Submit the form below to get in touch with me</p>
+          <p className="py-8">Contact me and let's start a conversation.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center">
           {/* The form */}
@@ -76,6 +64,17 @@ export const Contact = () => {
               Let's Talk
             </button>
           </form>
+          {/* the canvas start here */}
+          {isSmallScreen ? null : (
+            <Canvas style={{ width: "400px", height: "400px" }}>
+              <ambientLight intensity={0.5} />
+              <directionalLight intensity={1} position={[-2, 10, 12]} />
+
+              <Suspense fallback={null}>
+                <Envelop onClick={handleEnvelopClick} />
+              </Suspense>
+            </Canvas>
+          )}
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 import React, { useState, Suspense } from "react";
-
-import HeroImage from "../assets/profile.jpg";
-import { TbCircleArrowRight } from "react-icons/tb";
+import HeroImage from "../assets/HeroImage.jpg";
 import { Link } from "react-scroll";
 import { Particles } from "./Particles";
 import { motion, MotionConfig, useMotionValue } from "framer-motion";
@@ -116,9 +114,9 @@ export const Home = () => {
             </div>
           </motion.div>
 
-          <motion.div
+          <div
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            whileinview={{ opacity: 1 }}
             animate={{ x: 0 }}
             transition={{
               delay: 0.5,
@@ -131,9 +129,9 @@ export const Home = () => {
             <img
               src={HeroImage}
               alt="my porfile"
-              className="rounded-2xl mx-auto w-2/3 md:w-full"
+              className="rounded-2xl mx-auto w-1/3 md:w-full"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

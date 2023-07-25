@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import logo from "../assets/InToReact.png";
 
 export const Navbar = () => {
   const [hambIcon, setHambIcon] = useState(false);
   const links = [
     { id: 1, link: "home" },
     { id: 2, link: "about" },
-    { id: 3, link: "portfolio" },
-    { id: 4, link: "experience" },
+    { id: 3, link: "Projects" },
+    { id: 4, link: "skills" },
     { id: 5, link: "contact" },
   ];
 
@@ -23,7 +24,8 @@ export const Navbar = () => {
       className="flex justify-between items-center w-full h-20 px-4 text-white bg-black sticky top-0 z-30"
     >
       <div>
-        <h1 className="text-5xl font-signature">Hossam</h1>
+        {/* <h1 className="text-5xl font-signature">Hossam</h1> */}
+        <img src={logo} alt="" className="w-1/4" />
       </div>
       {/* The md prefix stands for medium screens or larger. */}
       <ul className="hidden md:flex">

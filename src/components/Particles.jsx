@@ -88,7 +88,7 @@ export const Particles = () => {
     }
 
     function init() {
-      particlesArray = [];
+      // particlesArray = [];
       // 90000
       let numberOfParticles = (canvas.height * canvas.width) / 90000;
       for (let i = 0; i < numberOfParticles * 2; i++) {
@@ -152,7 +152,7 @@ export const Particles = () => {
     return () => {
       canvas.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  });
   return (
     <div className="w-full h-screen z-1 teal-500">
       <canvas ref={canvasRef} id="canvas1" className="w-full"></canvas>

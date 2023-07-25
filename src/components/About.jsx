@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-// import AboutImage from "../assets/aboutImage.png";
 import { useMediaQuery } from "@react-hook/media-query";
 import firstImage from "../assets/first.png";
 import secondImage from "../assets/second.png";
@@ -8,7 +6,7 @@ import secondImage from "../assets/second.png";
 export const About = () => {
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
   const screenWidth = window.innerWidth;
-  console.log("screenWidth: " + screenWidth);
+
   return (
     <div
       name="about"

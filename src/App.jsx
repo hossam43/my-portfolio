@@ -3,9 +3,9 @@ import { Home } from "./components/Home.jsx";
 import { SocialLink } from "./components/SocialLink.jsx";
 import { About } from "./components/About.jsx";
 import Portfolio from "./components/Portfolio.jsx";
-import { Experience } from "./components/Experience.jsx";
+import Skills from "./components/Skills.jsx";
 import { Contact } from "./components/Contact.jsx";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import { Audio } from "react-loader-spinner";
 import "./Apps.css";
 
@@ -34,11 +34,15 @@ function App() {
         <>
           <Navbar />
           <Home />
+
           <SocialLink></SocialLink>
           <About></About>
           <Portfolio></Portfolio>
+          <Skills></Skills>
 
-          <Experience></Experience>
+          {/* all of the erros layed here */}
+          {/* <Experience></Experience> */}
+
           <Contact></Contact>
         </>
       )}
