@@ -226,41 +226,6 @@
     U+FEFF, U+FFFD;
 }
 
-/* style the carousel dot */
-
-/* the now dot */
-.rec-dot_active {
-  background-color: white !important;
-  box-shadow: 0 0 1px 3px gray !important;
-}
-
-/* on hover on anydot */
-.rec-dot:focus,
-.rec-dot:hover {
-  box-shadow: 0 0 1px 3px gray !important;
-}
-.rec-dot_active:focus,
-.rec-dot_active:hover {
-  background-color: white !important;
-  box-shadow: 0 0 1px 3px gray !important;
-}
-
-/* the arrows */
-.rec-arrow {
-  background-color: var(--blue) !important;
-  transition: all 0.3s ease;
-  font-size: 1.1rem !important;
-  color: white !important;
-  width: 1.7rem !important;
-  height: 1.7rem !important;
-  min-width: 1.7rem !important;
-  line-height: 1.7rem !important;
-}
-
-.rec-arrow:hover:not(:disabled) {
-  transform: scale(1.4);
-}
-
 .item {
   min-height: 10rem;
   min-width: 10rem;
@@ -282,4 +247,11 @@
   cursor: grab;
   overflow: hidden;
   padding: 2rem;
+}
+
+.imgContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

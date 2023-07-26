@@ -1,6 +1,6 @@
-import React, { Suspense, useState, useEffect } from "react";
-import { Envelop } from "./Envelop";
-import { Canvas } from "@react-three/fiber";
+import React, { useState, useEffect } from "react";
+import ContactImage from "../../src/assets/contactImageIso.png";
+import "./styles.css";
 export const Contact = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -19,7 +19,7 @@ export const Contact = () => {
     };
   }, []);
 
-  const handleEnvelopClick = () => {
+  const handleIsoClick = () => {
     const myEmail = "mailto:hossamayman2399.com";
     window.location.href = myEmail;
   };
@@ -64,16 +64,19 @@ export const Contact = () => {
               Let's Talk
             </button>
           </form>
-          {/* the canvas start here */}
-          {isSmallScreen ? null : (
-            <Canvas style={{ width: "400px", height: "400px" }}>
-              <ambientLight intensity={0.5} />
-              <directionalLight intensity={1} position={[-2, 10, 12]} />
 
-              <Suspense fallback={null}>
-                <Envelop onClick={handleEnvelopClick} />
-              </Suspense>
-            </Canvas>
+          {isSmallScreen ? null : (
+            <div
+              style={{ width: "400px", height: "400px" }}
+              className="imgContact"
+            >
+              <img
+                src={ContactImage}
+                onClick={handleIsoClick}
+                alt="Isometric"
+                className="w-4/5 hover:scale-105 duration-100 "
+              />
+            </div>
           )}
         </div>
       </div>
