@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b6471c51.css",
-    "main.js": "/my-portfolio/static/js/main.51809bde.js",
+    "main.css": "/my-portfolio/static/css/main.3b06a985.css",
+    "main.js": "/my-portfolio/static/js/main.54f49680.js",
     "static/media/first.png": "/my-portfolio/static/media/first.f02a599e3a9a99ea2d6b.png",
     "static/media/second.png": "/my-portfolio/static/media/second.ad4393973ac24b9067d1.png",
     "static/media/weather.jpg": "/my-portfolio/static/media/weather.99c291a5698543f0eb1e.jpg",
     "static/media/HeroImage.jpg": "/my-portfolio/static/media/HeroImage.4ba6b5d361c6bd6a0991.jpg",
+    "static/media/contactImageIso1.png": "/my-portfolio/static/media/contactImageIso1.036a71a40238f5dc4a3a.png",
     "static/media/wirToproto.jpg": "/my-portfolio/static/media/wirToproto.7a11b93638ff2950e9b7.jpg",
     "static/media/data-collector.jpg": "/my-portfolio/static/media/data-collector.c21fd90392fd2ec1da10.jpg",
     "static/media/travelAdvisor.jpg": "/my-portfolio/static/media/travelAdvisor.c96ac4e7c2d9a6718313.jpg",
@@ -24,11 +25,11 @@
     "static/media/InToReact.png": "/my-portfolio/static/media/InToReact.7bd28e976fb44c682000.png",
     "static/media/javascript.png": "/my-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/my-portfolio/index.html",
-    "main.b6471c51.css.map": "/my-portfolio/static/css/main.b6471c51.css.map",
-    "main.51809bde.js.map": "/my-portfolio/static/js/main.51809bde.js.map"
+    "main.3b06a985.css.map": "/my-portfolio/static/css/main.3b06a985.css.map",
+    "main.54f49680.js.map": "/my-portfolio/static/js/main.54f49680.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6471c51.css",
-    "static/js/main.51809bde.js"
+    "static/css/main.3b06a985.css",
+    "static/js/main.54f49680.js"
   ]
 }
