@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ContactImage from "../../src/assets/contactImageIso1.png";
 import "./styles.css";
-export const Contact = () => {
+import SocialIcon from "./SocialIcon";
+export const Contact = ({ icons }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -28,13 +29,16 @@ export const Contact = () => {
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
+      {/* first container */}
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+        {/* row 1 */}
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
           <p className="py-8">Contact me and let's start a conversation.</p>
         </div>
+        {/* row 2 */}
         <div className="flex flex-col md:flex-row justify-center items-center">
           {/* The form */}
           <form
@@ -64,7 +68,6 @@ export const Contact = () => {
               Let's Talk
             </button>
           </form>
-
           {isSmallScreen ? null : (
             <div
               style={{ width: "400px", height: "400px" }}
@@ -79,6 +82,7 @@ export const Contact = () => {
             </div>
           )}
         </div>
+        {isSmallScreen ? <SocialIcon icons={icons}></SocialIcon> : null}
       </div>
     </div>
   );
