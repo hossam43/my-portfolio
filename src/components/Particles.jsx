@@ -152,7 +152,7 @@ export const Particles = () => {
     return () => {
       canvas.removeEventListener("mousemove", handleMouseMove);
     };
-  });
+  }, []);
   return (
     <div className="w-full h-screen z-1 teal-500">
       <canvas ref={canvasRef} id="canvas1" className="w-full"></canvas>
