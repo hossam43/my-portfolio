@@ -1,7 +1,6 @@
 import React, { useState, Suspense } from "react";
 import HeroImage from "../assets/HeroImage.jpg";
 import { Link } from "react-scroll";
-import { Particles } from "./Particles";
 import { motion, MotionConfig, useMotionValue } from "framer-motion";
 import { Shapes } from "./Shapes";
 import { transition } from "./settings";
@@ -22,9 +21,6 @@ export const Home = () => {
   };
   return (
     <div name="home">
-      <div className="absolute top-0 left-0 w-full h-full z-0">
-        <Particles />
-      </div>
       <div className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 overflow-x-hidden">
         <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full text-white px-4 md:flex-row">
           {/* text intro */}
