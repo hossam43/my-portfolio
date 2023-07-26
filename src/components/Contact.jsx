@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ContactImage from "../../src/assets/contactImageIso.png";
+import ContactImage from "../../src/assets/contactImageIso1.png";
 import "./styles.css";
 export const Contact = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
