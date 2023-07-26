@@ -129,7 +129,7 @@ export const Home = () => {
             <img
               src={HeroImage}
               alt="my porfile"
-              className="rounded-2xl mx-auto w-1/3 md:w-full"
+              className="rounded-2xl mx-auto w-1/3 md:w-full z-20"
             />
           </div>
         </div>

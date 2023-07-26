@@ -120,7 +120,6 @@ export const Particles = () => {
     function connect() {
       let opacityValue = 1;
       const canvas = canvasRef.current;
-      const ctx = canvas.getContext("2d");
       ctx.lineWidth = 1;
 
       for (let a = 0; a < particlesArray.length; a++) {
