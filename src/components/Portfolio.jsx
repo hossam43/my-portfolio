@@ -1,6 +1,6 @@
 import React from "react";
 import dataCollector from "../assets/portfolio/data-collector.jpg";
-import landing from "../assets/portfolio/landing.jpg";
+import landing from "../assets/portfolio/landingv1.jpg";
 import navbar from "../assets/portfolio/weather.jpg";
 import travelAdvisor from "../assets/portfolio/travelAdvisor.jpg";
 import wireToPro from "../assets/portfolio/wirToproto.jpg";
